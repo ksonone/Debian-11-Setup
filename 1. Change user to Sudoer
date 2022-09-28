@@ -1,3 +1,5 @@
+## Change user to sudoer
+
 1. $ su -
 
 2. $ visudo
