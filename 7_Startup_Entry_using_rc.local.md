@@ -4,6 +4,7 @@
     sudo nano /etc/rc.local
 
 [2] Paste below script - [Do not forget to replace username]
+    
     #!/bin/sh -e
     #
     # rc.local
@@ -24,18 +25,23 @@
 [3] Save File
 
 [4] Now have to make the file executable with the following command:
+
     chmod +x /etc/rc.local
 
 [5] Then we need to reload the systemd manager configuration:
+    
     systemctl daemon-reload
 
 [6] Then we start the rc-local daemon:
+    
     systemctl start rc-local
     
 [7] And then we check the status of rc-local to confirm it ran OK:
+    
     systemctl status rc-local
     
 [8] You should then get an output like below stating the it is active and exited normal:
+    
     ● rc-local.service - /etc/rc.local Compatibility
      Loaded: loaded (/lib/systemd/system/rc-local.service; enabled-runtime; vendor preset: enabled)
     Drop-In: /usr/lib/systemd/system/rc-local.service.d
