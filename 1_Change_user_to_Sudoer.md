@@ -1,17 +1,23 @@
 ## Change user to sudoer
 
-1. $ su -
+[1] Run superuser command
 
-2. $ visudo
-Add user and give permission access as mentioned below:
+    su -
 
-  username ALL=(ALL:ALL) ALL
+[2] After become a superuser run following command:
 
-Save Changes
+    visudo
 
-3. Logout and Login again
+[3] Add user and give permission access as mentioned below [Do not forget to replace username with your actual user]:
 
-4. $ sudo -i
-  enter user password to verify that user becomes sudoer or not.
+    username ALL=(ALL:ALL) ALL
+
+[4] Save Changes, Logout and Login again
+
+[5] Open terminal and run following command :
+    
+    sudo -i
+
+[6] Verify the user become superuser or not
   
-  That's it.
+[7] That's it.
